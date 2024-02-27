@@ -7,6 +7,8 @@ public class StackFactory<T> {
                 return new StackVector<T>();
             case "arraylist":
                 return new StackArrayList<T>();
+            case "singlelinkedlist":
+                return new StackSLL<T>();
             default:
                 return null;
         }

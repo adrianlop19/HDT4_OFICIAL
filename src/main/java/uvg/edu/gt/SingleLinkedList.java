@@ -30,11 +30,17 @@ public class SingleLinkedList<T> implements UVGLList<T>{
 
     @Override
     public void removeLast() {
+        if (head.next == null){
+            head = null;
+            return;
+        }
         Node <T> curr = head;
+        Node <T> prev = null;
         while(curr.next != null){
+            prev = curr;
             curr = curr.next;
         }
-        curr = null;
+        prev.next = null;
     }
 
     @Override
