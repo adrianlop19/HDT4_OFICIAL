@@ -16,6 +16,8 @@ public class App
             System.out.println("Ingrese el numero correspondiente a la estructura de datos que desea utilizar:");
             System.out.println("1. ArrayList");
             System.out.println("2. Vector");
+            System.out.println("3. Single Linked List");
+            System.out.println("4. Double Linked List");
             int mainSelect = scanner.nextInt();
             switch (mainSelect) {
                 case 1:
@@ -24,6 +26,14 @@ public class App
                     break;
                 case 2:
                     stackType = "vector";
+                    mainBool = false;
+                    break;
+                case 3:
+                    stackType = "single";
+                    mainBool = false;
+                    break;
+                case 4:
+                    stackType = "double";
                     mainBool = false;
                     break;
                 default:

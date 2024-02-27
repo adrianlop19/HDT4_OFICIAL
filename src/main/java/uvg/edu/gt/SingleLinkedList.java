@@ -2,11 +2,6 @@ package uvg.edu.gt;
 
 public class SingleLinkedList<T> implements UVGLList<T>{
     private class Node<T>{
-        /*
-        Single Linked List Node
-        No utiliza key, solo guarda data, porque no voy a hacer
-        search.
-         */
         public T data;
         public Node<T> next = null;
         public Node(T cData){
